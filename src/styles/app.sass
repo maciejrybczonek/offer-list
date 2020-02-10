@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap&subset=latin-ext')
+
+body
+    background: #f7f7fb
+    margin: 0
+    font-family: 'Roboto', 'Helvetica Neue', sans-serif
+    font-weight: 300
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+a
+    color: #264d83
+    text-decoration: none
+    &:hover
+        color: #3498db
+
+.offer-list-wrapper
+    padding: 2rem
+    ul
+        list-style: none
+        padding: 0
+        margin: 0
+        border: 1px solid rgba(0, 0, 0, .06)
+        border-radius: .375rem
+        background: #fff
+        li
+            border-bottom: 1px solid rgba(0, 0, 0, .06)
+            &:first-child
+                a
+                    border-radius: .375rem .375rem 0 0
+            a
+                color: #264d83
+                display: flex
+                align-items: center
+                text-decoration: none
+                padding: 1.2rem
+                transition: all .2s ease-in-out
+                img
+                    display: block
+                    width: 8rem
+                    min-height: 8rem
+                    border-radius: .188rem
+                    align-self: flex-start
+                    object-fit: cover
+                &:hover
+                    background: #fafafd
+                    h2
+                        color: #3498db
+                p
+                    color: #7b7b7b
+                    line-height: 1.5
+            h2
+                margin: 0
+                font-size: 1.125rem
+                font-weight: 500
+                transition: all .2s ease-in-out
+            h3
+                margin: 0
+                color: #388c48
+                font-weight: 500
+                font-size: 1rem
+                display: flex
+                align-items: center
+                small
+                    font-size: .75rem
+                    line-height: 1
+                    background: #388c48
+                    color: #f7f7fb
+                    margin: 0 0 0 .5rem
+                    padding: .188rem .375rem
+                    border-radius: 10rem
+            .offer-list-description
+                margin: 0 1.5rem
+            .offer-list-details-link
+                margin-left: auto
+                white-space: nowrap
+                display: block
+                padding: .5rem 1rem
+                border-radius: .188rem
+                color: #fff
+                background: #264d83
+                font-size: .875rem
+                font-weight: 400
+                transition: all .2s ease-in-out
+                &:hover
+                    background: #3498db
+
+.offer-details-wrapper
+    padding: 2rem
+    .offer-details-box
+        border-radius: .375rem
+        background: #fff
+        border: 1px solid rgba(0, 0, 0, .06)
+        padding: 2rem
+        margin: 2rem 0 0 0
+    .offer-details
+        display: flex
+        img
+            display: block
+            border-radius: .188rem
+            width: 22rem
+            min-height: 14rem
+            margin: 0 2rem 0 0
+            object-fit: cover
+            align-self: flex-start
+        p
+            color: #7b7b7b
+            font-size: 1.125rem
+            line-height: 1.5
+        h1
+            margin: 0
+            font-size: 2.5rem
+            font-weight: 500
+        h2
+            margin: 0 0 2rem 0
+            color: #388c48
+            font-weight: 500
+            font-size: 1.4rem
+        pre
+            white-space: pre-wrap
+            background: #efefef
+            padding: 1rem 1.2rem
+            border-radius: .188rem
+
+.loader
+    margin: 2rem auto
+    border: .25rem solid rgba(0,0,0,.03)
+    border-top: .25rem solid #3498db
+    border-radius: 50%
+    width: 2rem
+    height: 2rem
+    animation: spin .8s ease-in-out infinite
+
+@keyframes spin
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(360deg)
